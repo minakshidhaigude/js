@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <script>
+      var a = ["manu","didi","bhaiya"];
+      a.forEach(function(value){
+      // document.write(value += "<br>")
+      console.log(value += "")
+      })
+
+      var b = {
+         fn:"manu",
+         ln:"dhaigude",
+         age:28,
+         city:"pune"
+      };
+      console.log(b.fn);
+      for(var key in b){
+         document.write(b[key] + "<br>")
+      }
+      var obj ={
+         fn : "minakshi",
+         em :"abc@gmail.com"
+      };
+      for (var key in obj){
+         document.write(key + ":"+ obj[key] + "<br>")
+      }
+
+   </script>
+</body>
+</html>

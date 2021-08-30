@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <p id="mydata">I am minakshi Dhaigude</p>
+  <p id="mydata1">MINAKSHI DHAIGUDE</p>
+  <button onclick="startTimer()">see magic</button><br><br>
+  <button onclick="starttimer()">setInterval</button><br><br>
+  <button onclick="stoptimer()">cleartimeout</button>
+
+  <script>
+      let mydata = document.querySelector("#mydata");
+
+      function welcome(){
+          mydata.innerHTML = `welcome to js`;
+      }
+      function startTimer(){
+          setTimeout(welcome,1000);
+      }
+
+      let mydata1 = document.querySelector("#mydata1");
+      let num = 0;
+      let timerref;
+      function starttimer(){
+          timerref = setInterval(() => {
+           mydata1.innerHTML = `welcome to settime it is ${num}`;
+           num++;
+          }, 1000);
+      }
+      function stoptimer(){
+          clearInterval(timerref);
+      }
+  </script>
+</html>
